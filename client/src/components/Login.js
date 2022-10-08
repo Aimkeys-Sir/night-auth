@@ -7,7 +7,7 @@ export default function Login({ getUser }) {
     const [loginDetails, setLoginDetails] = useState({ email: "", password: "" })
     const [user, setUser] = useState({})
     const [error, setError] = useState('')
-    const [signUpDetails, setSignUpDetails] = useState({ first_name: "", last_name: "", email: "", password: "", birthday: "", callsign: "" })
+    const [signUpDetails, setSignUpDetails] = useState({ callsign:"", email: "",confirm_password:"", password: "", birthday: ""})
 
     function checkPasswordMatch(){
 
@@ -23,15 +23,14 @@ export default function Login({ getUser }) {
                 <form>
                     <label>Email/username</label>
                     <input id="email" name="email" placeholder="Enter email or call sign" type={'text'} value={loginDetails.email} />
-                    <label htmlFor="pass">Password</label>
-                    <input name="password" type={"password"} id="pass"  />
+                    <label htmlFor="password">Password</label>
+                    <input name="password" type={"password"} id="password"  />
                     <button>Log in</button>
                 </form>
             </div>}
 
             {signUp ? <div>
                 <form >
-                    <input  value={signUpDetails.first_name} name="first_name" type={"text"} placeholder="First name" />
                     <input  value={signUpDetails.callsign} name="callsign" type={"text"} placeholder="Call sign" />
                     <input value={signUpDetails.email} name="email" type={'text'} placeholder="Email" /> 
                     <input  value={signUpDetails.password} name="password" type={'password'} placeholder='Enter password' />
