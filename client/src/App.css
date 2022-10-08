@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;400&family=Noto+Sans+JP&family=Noto+Sans:wght@300;400;500;600&family=Roboto+Mono:wght@200;400&display=swap');
+
+.App {
+  text-align: center;
+  background: #060725;
+  font-family: 'Noto Sans',sans-serif;
+  min-height: 100vh;
+  color:  white;
+  position: relative;
+}
+
+.login{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'changa';
+}
+.login form{
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+.login input{
+background: none;
+margin:5px ;
+height: 30px;
+width: 300px;
+color: white;
+outline: none;
+font-size: 16px;
+padding: 2px 5px;
+}
+.login button{
+  height: 35px;
+  background: #022e70;
+  color: white;
+  font-family: 'changa';
+  width: 110px;
+  font-size:18px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  flex-wrap: nowrap;
+  margin: 15px 5px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bar{
+  display: flex;
+}
+#sign-up-logo{
+  margin-top: -30px;
+}
+.error{
+  animation: error_anim 1s linear 3;
+}
+.profile-small {
+  height: 120px;
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  border-radius: 50%;
+}
+#profile-hud-small {
+  height: 160px;
+}
+
